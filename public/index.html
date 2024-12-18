@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Usuários</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Gerenciamento de Usuários</h1>
+
+    <!-- Formulário para adicionar/atualizar usuários -->
+    <div id="userForm">
+        <h3>Adicionar/Atualizar Usuário</h3>
+        <input type="hidden" id="userId" />
+        <input type="text" id="userName" placeholder="Nome do usuário" required />
+        <button onclick="salvarUsuario()">Salvar</button>
+    </div>
+
+    <!-- Lista de usuários -->
+    <div id="usersList">
+        <h3>Lista de Usuários</h3>
+        <ul id="userList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
